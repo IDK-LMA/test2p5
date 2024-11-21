@@ -1,0 +1,51 @@
+/* 全局样式设置 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* 页面背景色，可根据喜好更改 */
+    overflow: hidden;
+    /* 隐藏页面滚动条，若元素超出可视区域 */
+}
+
+/* 画布样式 */
+canvas {
+    display: block;
+    margin: auto;
+    /* 让画布在页面中水平居中 */
+    border: 1px solid #ccc;
+    /* 给画布添加一个浅灰色边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 添加一个淡淡的阴影效果 */
+}
+
+/* 当鼠标悬停在画布上时改变鼠标指针样式 */
+canvas:hover {
+    cursor: pointer;
+}
+
+/* 可以添加针对特定类名或元素的样式，以下是一些假设的扩展样式示例 */
+
+/* 假设你想为代表眼睛的元素添加特定样式（如果在HTML中有对应的类名等关联方式） */
+.eye-element {
+    /* 这里可以设置眼睛元素的一些样式，比如添加过渡动画效果 */
+    transition: all 0.3s ease;
+}
+
+/* 当鼠标悬停在眼睛元素上时的样式变化 */
+.eye-element:hover {
+    transform: scale(1.1);
+    /* 稍微放大一点，营造悬停效果 */
+}
+
+/* 针对粒子元素的样式示例（同样假设存在关联方式） */
+.particle-element {
+    border-radius: 50%;
+    /* 让粒子显示为圆形（如果绘制时不是圆形） */
+}
+
+/* 弹簧元素的样式示例（如果有对应关联来应用样式） */
+.spring-element {
+    stroke-dasharray: 5;
+    /* 设置弹簧线条为虚线样式，可调整参数改变虚线效果 */
+}
